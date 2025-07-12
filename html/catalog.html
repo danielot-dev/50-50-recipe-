@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Catalog - 50/50</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>50/50</h2>
+                <span>Food Marketplace</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="catalog.html" class="nav-link active">Food Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipes.html" class="nav-link">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Catalog Header -->
+    <section class="catalog-header">
+        <div class="container">
+            <h1>Food Catalog</h1>
+            <p>Discover fresh, local food from our community of sellers</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for food items...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="vegetables">Vegetables</button>
+                    <button class="filter-btn" data-category="fruits">Fruits</button>
+                    <button class="filter-btn" data-category="bakery">Bakery</button>
+                    <button class="filter-btn" data-category="meat">Meat</button>
+                    <button class="filter-btn" data-category="dairy">Dairy</button>
+                </div>
+                <div class="sort-controls">
+                    <select id="sortSelect">
+                        <option value="name">Sort by Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Sort by Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Items Grid -->
+    <section class="food-catalog">
+        <div class="container">
+            <div class="food-grid" id="foodGrid">
+                <!-- Vegetables -->
+                <div class="food-item" data-category="vegetables" data-price="3.50" data-rating="4.8">
+                    <div class="food-image">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Fresh Carrots</h3>
+                        <p class="seller">Fresh Farm Market</p>
+                        <p class="description">Organic carrots, freshly harvested</p>
+                        <div class="food-meta">
+                            <span class="price">$3.50/lb</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="vegetables" data-price="2.75" data-rating="4.6">
+                    <div class="food-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Organic Spinach</h3>
+                        <p class="seller">Fresh Farm Market</p>
+                        <p class="description">Fresh organic spinach leaves</p>
+                        <div class="food-meta">
+                            <span class="price">$2.75/bunch</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Fruits -->
+                <div class="food-item" data-category="fruits" data-price="4.25" data-rating="4.9">
+                    <div class="food-image">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Red Apples</h3>
+                        <p class="seller">Fresh Farm Market</p>
+                        <p class="description">Sweet and crisp red apples</p>
+                        <div class="food-meta">
+                            <span class="price">$4.25/lb</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="fruits" data-price="5.50" data-rating="4.7">
+                    <div class="food-image">
+                        <i class="fas fa-lemon"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Fresh Lemons</h3>
+                        <p class="seller">Fresh Farm Market</p>
+                        <p class="description">Juicy organic lemons</p>
+                        <div class="food-meta">
+                            <span class="price">$5.50/lb</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bakery -->
+                <div class="food-item" data-category="bakery" data-price="4.99" data-rating="4.8">
+                    <div class="food-image">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Artisan Bread</h3>
+                        <p class="seller">Sweet Delights Bakery</p>
+                        <p class="description">Freshly baked artisan bread</p>
+                        <div class="food-meta">
+                            <span class="price">$4.99/loaf</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="bakery" data-price="3.25" data-rating="4.5">
+                    <div class="food-image">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Chocolate Muffins</h3>
+                        <p class="seller">Sweet Delights Bakery</p>
+                        <p class="description">Delicious chocolate muffins</p>
+                        <div class="food-meta">
+                            <span class="price">$3.25/each</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Meat -->
+                <div class="food-item" data-category="meat" data-price="12.99" data-rating="4.9">
+                    <div class="food-image">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Grilled Chicken</h3>
+                        <p class="seller">Grill Masters</p>
+                        <p class="description">Premium grilled chicken breast</p>
+                        <div class="food-meta">
+                            <span class="price">$12.99/lb</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="meat" data-price="15.50" data-rating="4.8">
+                    <div class="food-image">
+                        <i class="fas fa-bacon"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Premium Bacon</h3>
+                        <p class="seller">Grill Masters</p>
+                        <p class="description">Thick-cut premium bacon</p>
+                        <div class="food-meta">
+                            <span class="price">$15.50/lb</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Dairy -->
+                <div class="food-item" data-category="dairy" data-price="6.99" data-rating="4.7">
+                    <div class="food-image">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Aged Cheddar</h3>
+                        <p class="seller">Dairy Delights</p>
+                        <p class="description">Sharp aged cheddar cheese</p>
+                        <div class="food-meta">
+                            <span class="price">$6.99/lb</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="dairy" data-price="4.25" data-rating="4.6">
+                    <div class="food-image">
+                        <i class="fas fa-egg"></i>
+                    </div>
+                    <div class="food-info">
+                        <h3>Farm Fresh Eggs</h3>
+                        <p class="seller">Dairy Delights</p>
+                        <p class="description">Fresh farm eggs, dozen</p>
+                        <div class="food-meta">
+                            <span class="price">$4.25/dozen</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">$0.00</span></h3>
+                <button class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>50/50</h3>
+                    <p>Connecting local food sellers with food lovers</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Food Catalog</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 50/50 Food Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 
