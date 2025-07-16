@@ -216,7 +216,9 @@ body {
     margin-bottom: 1.1rem;
     color: #fff;
     letter-spacing: 0.01em;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    text-shadow:
+        0 0 8px rgba(255,102,0,0.6),
+        0 0 12px rgba(255,102,0,0.4);
 }
 
 .hero-content p {
