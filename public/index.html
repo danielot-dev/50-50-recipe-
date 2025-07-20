@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>50/50 - Food Sellers Marketplace</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>50/50 - Nigerian Food Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <div class="nav-logo-outside left">
+        <div class="nav-logo">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=facearea&w=200&h=200&q=80" alt="Logo">
+        </div>
+    </div>
+    <nav class="navbar with-logo-left">
         <div class="nav-container">
-            <div class="nav-logo">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=facearea&w=80&h=80&q=80" alt="Logo">
-            </div>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="catalog.html" class="nav-link">Food Catalog</a>
+                    <a href="catalog.html" class="nav-link">Nigerian Food</a>
                 </li>
                 <li class="nav-item">
-                    <a href="recipes.html" class="nav-link">Recipes</a>
+                    <a href="recipes.html" class="nav-link">Nigerian Recipes</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -43,13 +45,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
-            <h1>Local Food Marketplace</h1>
-            <p>Fresh ingredients from passionate local sellers</p>
-<p style= "font-style: italic; color: #666; " > Connecting communities through food</p>
+            <h1>Nigerian Food Marketplace</h1>
+            <p>Authentic local dishes from passionate Nigerian food sellers</p>
+            <p style="font-style: italic; color: #666;">Connecting communities through food</p>
             <div class="hero-buttons">
-                <a href="catalog.html" class="btn btn-primary">Browse Food</a>
-                <a href="recipes.html" class="btn btn-secondary">View Recipes</a>
+                <a href="catalog.html" class="btn btn-primary">Browse Nigerian Food</a>
+                <a href="recipes.html" class="btn btn-secondary">View Nigerian Recipes</a>
             </div>
         </div>
     </section>
@@ -57,44 +62,14 @@
     <!-- Featured Sellers -->
     <section class="featured-sellers">
         <div class="container">
-            <h2>Featured Sellers</h2>
+            <h2>Featured Nigerian Food Sellers</h2>
             <div class="sellers-grid">
                 <div class="seller-card">
                     <div class="seller-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Fresh Farm Market" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Mama's Kitchen" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
-                    <h3>Fresh Farm Market</h3>
-                    <p>Organic vegetables and fruits from local farms</p>
-                    <div class="seller-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>4.8</span>
-                    </div>
-                </div>
-                <div class="seller-card">
-                    <div class="seller-image">
-                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Sweet Delights Bakery" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                    </div>
-                    <h3>Sweet Delights Bakery</h3>
-                    <p>Freshly baked breads, pastries, and cakes</p>
-                    <div class="seller-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <span>4.5</span>
-                    </div>
-                </div>
-                <div class="seller-card">
-                    <div class="seller-image">
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Grill Masters" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                    </div>
-                    <h3>Grill Masters</h3>
-                    <p>Premium meats and grilled specialties</p>
+                    <h3>Mama's Kitchen</h3>
+                    <p>Authentic Nigerian jollof rice, egusi soup, and traditional dishes</p>
                     <div class="seller-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -102,6 +77,36 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <span>4.9</span>
+                    </div>
+                </div>
+                <div class="seller-card">
+                    <div class="seller-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Auntie's Bakery" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <h3>Auntie's Bakery</h3>
+                    <p>Fresh pounded yam, amala, and Nigerian bread specialties</p>
+                    <div class="seller-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="seller-card">
+                    <div class="seller-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Grill Masters Nigeria" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <h3>Grill Masters Nigeria</h3>
+                    <p>Suya, kilishi, and grilled Nigerian meat specialties</p>
+                    <div class="seller-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
                     </div>
                 </div>
             </div>
@@ -115,24 +120,24 @@
             <div class="steps-grid">
                 <div class="step">
                     <div class="step-icon">
-                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&h=200&fit=crop" alt="Discover" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=200&h=200&fit=crop" alt="Discover" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
                     </div>
                     <h3>Discover</h3>
-                    <p>Browse through our curated selection of local food sellers</p>
+                    <p>Browse through our curated selection of authentic Nigerian food sellers</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=200&fit=crop" alt="Order" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&h=200&fit=crop" alt="Order" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
                     </div>
                     <h3>Order</h3>
-                    <p>Place your order directly with the seller</p>
+                    <p>Place your order for fresh Nigerian dishes and traditional meals</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
                         <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&h=200&fit=crop" alt="Receive" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
                     </div>
                     <h3>Receive</h3>
-                    <p>Get fresh, local food delivered to your door</p>
+                    <p>Get authentic Nigerian food delivered to your door</p>
                 </div>
             </div>
         </div>
@@ -144,21 +149,21 @@
             <h2>Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Join Our Community</h3>
-                    <p>Are you a food seller? Join our platform and reach more customers!</p>
+                    <h3>Join Our Nigerian Food Community</h3>
+                    <p>Are you a Nigerian food seller? Join our platform and reach more customers around University of Abuja!</p>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>hello@50-50.com</span>
+                        <span>hello@nigerianfood-50-50.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+1 (555) 123-4567</span>
+                        <span>+234 (0) 123-456-7890</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Food Street, Culinary City</span>
+                        <span>University of Abuja, Main Campus, Gwagwalada</span>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Join our community" style="width: 100%; max-width: 300px; border-radius: 10px; margin-top: 20px;">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Nigerian food community" style="width: 100%; max-width: 300px; border-radius: 10px; margin-top: 20px;">
                 </div>
                 <form class="contact-form">
                     <h3>Contact Us</h3>
@@ -176,16 +181,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>50/50</h3>
-                    <p>Connecting local food sellers with food lovers</p>
-                    <img src="https://images.unsplash.com/photo-1504674900240-9c88301bfdfc?w=300&h=200&fit=crop" alt="Food community" style="width: 100%; max-width: 250px; border-radius: 8px; margin-top: 15px;">
+                    <h3>50/50 Nigerian Food</h3>
+                    <p>Connecting Nigerian food sellers with food lovers around University of Abuja</p>
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop" alt="Nigerian food community" style="width: 100%; max-width: 250px; border-radius: 8px; margin-top: 15px;">
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="catalog.html">Food Catalog</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="catalog.html">Nigerian Food Catalog</a></li>
+                        <li><a href="recipes.html">Nigerian Recipes</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -195,15 +200,15 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <p style="margin-top: 15px; font-size: 14px; color: #888;">Join our growing family of food enthusiasts!</p>
+                    <p style="margin-top: 15px; font-size: 14px; color: #888;">Join our growing family of Nigerian food enthusiasts!</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>💖 Made with love & passion &copy; 2024 50/50 Food Marketplace. Every bite tells a story! 💖</p>
+                <p>💖 Made with love & passion &copy; 2024 50/50 Nigerian Food Marketplace. Every bite tells a Nigerian story! 💖</p>
             </div>
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 

@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Catalog - 50/50</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Nigerian Food Catalog - 50/50</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <div class="nav-logo-outside left">
+        <div class="nav-logo">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=facearea&w=200&h=200&q=80" alt="Logo">
+        </div>
+    </div>
+    <nav class="navbar with-logo-left">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h2>50/50</h2>
-                <span>Food Marketplace</span>
-            </div>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="catalog.html" class="nav-link active">Food Catalog</a>
+                    <a href="catalog.html" class="nav-link active">Nigerian Food</a>
                 </li>
                 <li class="nav-item">
-                    <a href="recipes.html" class="nav-link">Recipes</a>
+                    <a href="recipes.html" class="nav-link">Nigerian Recipes</a>
                 </li>
                 <li class="nav-item">
                     <a href="index.html#contact" class="nav-link">Contact</a>
@@ -41,8 +46,8 @@
     <!-- Catalog Header -->
     <section class="catalog-header">
         <div class="container">
-            <h1>Food Catalog</h1>
-            <p>Discover fresh, local food from our community of sellers</p>
+            <h1>Nigerian Food Catalog</h1>
+            <p>Discover authentic Nigerian dishes from our community of passionate food sellers</p>
         </div>
     </section>
 
@@ -51,16 +56,16 @@
         <div class="container">
             <div class="filter-controls">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search for food items...">
+                    <input type="text" id="searchInput" placeholder="Search for Nigerian dishes...">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-category="all">All</button>
-                    <button class="filter-btn" data-category="vegetables">Vegetables</button>
-                    <button class="filter-btn" data-category="fruits">Fruits</button>
-                    <button class="filter-btn" data-category="bakery">Bakery</button>
-                    <button class="filter-btn" data-category="meat">Meat</button>
-                    <button class="filter-btn" data-category="dairy">Dairy</button>
+                    <button class="filter-btn active" data-category="all">All Dishes</button>
+                    <button class="filter-btn" data-category="soups">Soups & Stews</button>
+                    <button class="filter-btn" data-category="rice">Rice Dishes</button>
+                    <button class="filter-btn" data-category="swallows">Swallows</button>
+                    <button class="filter-btn" data-category="grilled">Grilled</button>
+                    <button class="filter-btn" data-category="snacks">Snacks</button>
                 </div>
                 <div class="sort-controls">
                     <select id="sortSelect">
@@ -78,17 +83,36 @@
     <section class="food-catalog">
         <div class="container">
             <div class="food-grid" id="foodGrid">
-                <!-- Vegetables -->
-                <div class="food-item" data-category="vegetables" data-price="3.50" data-rating="4.8">
+                <!-- Soups & Stews -->
+                <div class="food-item" data-category="soups" data-price="8.50" data-rating="4.9">
                     <div class="food-image">
-                        <i class="fas fa-carrot"></i>
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Egusi Soup" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="food-info">
-                        <h3>Fresh Carrots</h3>
-                        <p class="seller">Fresh Farm Market</p>
-                        <p class="description">Organic carrots, freshly harvested</p>
+                        <h3>Egusi Soup</h3>
+                        <p class="seller">Mama's Kitchen</p>
+                        <p class="description">Rich and creamy egusi soup with spinach and meat</p>
                         <div class="food-meta">
-                            <span class="price">$3.50/lb</span>
+                            <span class="price">₦8,500</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="soups" data-price="7.25" data-rating="4.8">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Okro Soup" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="food-info">
+                        <h3>Okro Soup</h3>
+                        <p class="seller">Mama's Kitchen</p>
+                        <p class="description">Fresh okro soup with seafood and vegetables</p>
+                        <div class="food-meta">
+                            <span class="price">₦7,250</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <span>4.8</span>
@@ -98,16 +122,75 @@
                     </div>
                 </div>
 
-                <div class="food-item" data-category="vegetables" data-price="2.75" data-rating="4.6">
+                <!-- Rice Dishes -->
+                <div class="food-item" data-category="rice" data-price="12.99" data-rating="4.9">
                     <div class="food-image">
-                        <i class="fas fa-leaf"></i>
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Jollof Rice" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="food-info">
-                        <h3>Organic Spinach</h3>
-                        <p class="seller">Fresh Farm Market</p>
-                        <p class="description">Fresh organic spinach leaves</p>
+                        <h3>Jollof Rice</h3>
+                        <p class="seller">Mama's Kitchen</p>
+                        <p class="description">Spicy and flavorful Nigerian jollof rice with chicken</p>
                         <div class="food-meta">
-                            <span class="price">$2.75/bunch</span>
+                            <span class="price">₦12,990</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="rice" data-price="9.50" data-rating="4.7">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Fried Rice" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="food-info">
+                        <h3>Nigerian Fried Rice</h3>
+                        <p class="seller">Mama's Kitchen</p>
+                        <p class="description">Colorful fried rice with vegetables and meat</p>
+                        <div class="food-meta">
+                            <span class="price">₦9,500</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Swallows -->
+                <div class="food-item" data-category="swallows" data-price="6.99" data-rating="4.8">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Pounded Yam" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="food-info">
+                        <h3>Pounded Yam</h3>
+                        <p class="seller">Auntie's Bakery</p>
+                        <p class="description">Smooth and stretchy pounded yam</p>
+                        <div class="food-meta">
+                            <span class="price">₦6,990</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="swallows" data-price="5.25" data-rating="4.6">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Amala" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="food-info">
+                        <h3>Amala</h3>
+                        <p class="seller">Auntie's Bakery</p>
+                        <p class="description">Traditional amala with ewedu soup</p>
+                        <div class="food-meta">
+                            <span class="price">₦5,250</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <span>4.6</span>
@@ -117,17 +200,17 @@
                     </div>
                 </div>
 
-                <!-- Fruits -->
-                <div class="food-item" data-category="fruits" data-price="4.25" data-rating="4.9">
+                <!-- Grilled -->
+                <div class="food-item" data-category="grilled" data-price="15.99" data-rating="4.9">
                     <div class="food-image">
-                        <i class="fas fa-apple-alt"></i>
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Suya" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="food-info">
-                        <h3>Red Apples</h3>
-                        <p class="seller">Fresh Farm Market</p>
-                        <p class="description">Sweet and crisp red apples</p>
+                        <h3>Suya</h3>
+                        <p class="seller">Grill Masters Nigeria</p>
+                        <p class="description">Spicy grilled meat skewers with groundnut powder</p>
                         <div class="food-meta">
-                            <span class="price">$4.25/lb</span>
+                            <span class="price">₦15,990</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <span>4.9</span>
@@ -137,36 +220,16 @@
                     </div>
                 </div>
 
-                <div class="food-item" data-category="fruits" data-price="5.50" data-rating="4.7">
+                <div class="food-item" data-category="grilled" data-price="18.50" data-rating="4.8">
                     <div class="food-image">
-                        <i class="fas fa-lemon"></i>
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Kilishi" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="food-info">
-                        <h3>Fresh Lemons</h3>
-                        <p class="seller">Fresh Farm Market</p>
-                        <p class="description">Juicy organic lemons</p>
+                        <h3>Kilishi</h3>
+                        <p class="seller">Grill Masters Nigeria</p>
+                        <p class="description">Dried and spiced beef jerky</p>
                         <div class="food-meta">
-                            <span class="price">$5.50/lb</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.7</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Bakery -->
-                <div class="food-item" data-category="bakery" data-price="4.99" data-rating="4.8">
-                    <div class="food-image">
-                        <i class="fas fa-bread-slice"></i>
-                    </div>
-                    <div class="food-info">
-                        <h3>Artisan Bread</h3>
-                        <p class="seller">Sweet Delights Bakery</p>
-                        <p class="description">Freshly baked artisan bread</p>
-                        <div class="food-meta">
-                            <span class="price">$4.99/loaf</span>
+                            <span class="price">₦18,500</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <span>4.8</span>
@@ -176,75 +239,17 @@
                     </div>
                 </div>
 
-                <div class="food-item" data-category="bakery" data-price="3.25" data-rating="4.5">
+                <!-- Snacks -->
+                <div class="food-item" data-category="snacks" data-price="3.99" data-rating="4.7">
                     <div class="food-image">
-                        <i class="fas fa-birthday-cake"></i>
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Puff Puff" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="food-info">
-                        <h3>Chocolate Muffins</h3>
-                        <p class="seller">Sweet Delights Bakery</p>
-                        <p class="description">Delicious chocolate muffins</p>
+                        <h3>Puff Puff</h3>
+                        <p class="seller">Auntie's Bakery</p>
+                        <p class="description">Sweet and fluffy Nigerian doughnuts</p>
                         <div class="food-meta">
-                            <span class="price">$3.25/each</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.5</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Meat -->
-                <div class="food-item" data-category="meat" data-price="12.99" data-rating="4.9">
-                    <div class="food-image">
-                        <i class="fas fa-drumstick-bite"></i>
-                    </div>
-                    <div class="food-info">
-                        <h3>Grilled Chicken</h3>
-                        <p class="seller">Grill Masters</p>
-                        <p class="description">Premium grilled chicken breast</p>
-                        <div class="food-meta">
-                            <span class="price">$12.99/lb</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="food-item" data-category="meat" data-price="15.50" data-rating="4.8">
-                    <div class="food-image">
-                        <i class="fas fa-bacon"></i>
-                    </div>
-                    <div class="food-info">
-                        <h3>Premium Bacon</h3>
-                        <p class="seller">Grill Masters</p>
-                        <p class="description">Thick-cut premium bacon</p>
-                        <div class="food-meta">
-                            <span class="price">$15.50/lb</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Dairy -->
-                <div class="food-item" data-category="dairy" data-price="6.99" data-rating="4.7">
-                    <div class="food-image">
-                        <i class="fas fa-cheese"></i>
-                    </div>
-                    <div class="food-info">
-                        <h3>Aged Cheddar</h3>
-                        <p class="seller">Dairy Delights</p>
-                        <p class="description">Sharp aged cheddar cheese</p>
-                        <div class="food-meta">
-                            <span class="price">$6.99/lb</span>
+                            <span class="price">₦3,990</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <span>4.7</span>
@@ -254,16 +259,16 @@
                     </div>
                 </div>
 
-                <div class="food-item" data-category="dairy" data-price="4.25" data-rating="4.6">
+                <div class="food-item" data-category="snacks" data-price="2.25" data-rating="4.6">
                     <div class="food-image">
-                        <i class="fas fa-egg"></i>
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Akara" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="food-info">
-                        <h3>Farm Fresh Eggs</h3>
-                        <p class="seller">Dairy Delights</p>
-                        <p class="description">Fresh farm eggs, dozen</p>
+                        <h3>Akara</h3>
+                        <p class="seller">Auntie's Bakery</p>
+                        <p class="description">Crispy bean cakes with onions and peppers</p>
                         <div class="food-meta">
-                            <span class="price">$4.25/dozen</span>
+                            <span class="price">₦2,250</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <span>4.6</span>
@@ -285,7 +290,7 @@
                 <!-- Cart items will be dynamically added here -->
             </div>
             <div class="cart-total">
-                <h3>Total: <span id="cartTotal">$0.00</span></h3>
+                <h3>Total: <span id="cartTotal">₦0.00</span></h3>
                 <button class="btn btn-primary">Checkout</button>
             </div>
         </div>
@@ -296,15 +301,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>50/50</h3>
-                    <p>Connecting local food sellers with food lovers</p>
+                    <h3>50/50 Nigerian Food</h3>
+                    <p>Connecting Nigerian food sellers with food lovers around University of Abuja</p>
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop" alt="Nigerian food community" style="width: 100%; max-width: 250px; border-radius: 8px; margin-top: 15px;">
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="catalog.html">Food Catalog</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="catalog.html">Nigerian Food Catalog</a></li>
+                        <li><a href="recipes.html">Nigerian Recipes</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -314,14 +320,15 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                    <p style="margin-top: 15px; font-size: 14px; color: #888;">Join our growing family of Nigerian food enthusiasts!</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 50/50 Food Marketplace. All rights reserved.</p>
+                <p>💖 Made with love & passion &copy; 2024 50/50 Nigerian Food Marketplace. Every bite tells a Nigerian story! 💖</p>
             </div>
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 
