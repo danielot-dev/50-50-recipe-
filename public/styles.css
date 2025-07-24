@@ -23,7 +23,7 @@ body {
     padding: 0 20px;
 }
 
-/* Glassmorphic Centered Navbar with Logo */
+/* Glassmorphic Centered Navbar with Logo styles */
 .navbar {
     position: fixed;
     top: 24px;
@@ -76,7 +76,7 @@ body {
     width: 100%;
 }
 
-/* Logo outside navbar effect */
+/* Logo outside navbar effect style */
 .nav-logo-outside {
     position: fixed;
     top: 24px;
@@ -159,7 +159,7 @@ body {
     display: none;
 }
 
-/* Hero Section - Premium Centered Layout with Video Background */
+/* Hero Section - Premium Centered Layout with Video Background style*/
 .hero {
     position: relative;
     display: flex;
